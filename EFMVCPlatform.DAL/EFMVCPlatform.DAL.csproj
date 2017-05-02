@@ -82,17 +82,6 @@
     </Compile>
     <Compile Include="Northwind\NorthwindContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserRights\UserDAL.cs" />
-    <Compile Include="UserRights\UserRights.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UserRights.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UserRights\UserRights.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UserRights.edmx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EFMVCPlatform.IDAL\EFMVCPlatform.IDAL.csproj">
@@ -114,25 +103,15 @@
       <DependentUpon>Northwind.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <EntityDeploy Include="UserRights\UserRights.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>UserRights.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="UserRights\UserRights.edmx.diagram">
-      <DependentUpon>UserRights.edmx</DependentUpon>
-    </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UserRights\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Northwind\Norghwind.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Norghwind.Context.cs</LastGenOutput>
       <DependentUpon>Northwind.edmx</DependentUpon>
-    </Content>
-    <Content Include="UserRights\UserRights.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>UserRights.edmx</DependentUpon>
-      <LastGenOutput>UserRights.Context.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
