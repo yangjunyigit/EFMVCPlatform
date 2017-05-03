@@ -10,12 +10,12 @@ namespace EFMVCPlatform.Business
 {
     internal class DataProvider
     {
-        public static IUserDAL UserDAL
-        {
-            get
-            {
-                return new DAL.UserRights.UserDAL();
-            }
-        }
+        //public static IUserDAL UserDAL
+        //{
+        //    get
+        //    {
+        //        return new DAL.UserRights.UserDAL();
+        //    }
+        //}
     }
 }

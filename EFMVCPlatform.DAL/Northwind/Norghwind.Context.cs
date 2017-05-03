@@ -12,6 +12,7 @@ namespace EFMVCPlatform.DAL.Northwind
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using EFMVCPlatform.Models.Northwind;
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     

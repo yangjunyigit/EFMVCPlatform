@@ -481,5 +481,89 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="P:WebApiServer.Controllers.BaseApi.DESDecode">
+            <summary>
+            数据解密的方法代理
+            </summary>
+        </member>
+        <member name="P:WebApiServer.Controllers.BaseApi.CurrentUser">
+            <summary>
+            请求头里包含的用户信息
+            </summary>
+        </member>
+        <member name="P:WebApiServer.Controllers.ClientInfoCache.DESDecode">
+            <summary>
+            数据解密的方法代理
+            </summary>
+        </member>
+        <member name="T:WebApiServer.Controllers.ClientInfoCache.ClientInfo">
+            <summary>
+            保存客户端信息的数据结构
+            </summary>
+        </member>
+        <member name="P:WebApiServer.Controllers.ClientInfoCache.ClientInfo.ClientId">
+            <summary>
+            客户端Id
+            </summary>
+        </member>
+        <member name="P:WebApiServer.Controllers.ClientInfoCache.ClientInfo.PublicKey">
+            <summary>
+            客户端公钥
+            </summary>
+        </member>
+        <member name="P:WebApiServer.Controllers.ClientInfoCache.ClientInfo.DesKey">
+            <summary>
+            客户端秘钥
+            </summary>
+        </member>
+        <member name="P:WebApiServer.Controllers.ClientInfoCache.ClientInfo.LastTime">
+            <summary>
+            最后一侧访问时间
+            </summary>
+        </member>
+        <member name="M:WebApiServer.Controllers.ClientInfoCache.GetClientDesKey(System.String)">
+            <summary>
+            获取此终端的des秘钥
+            </summary>
+            <param name="clientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiServer.Controllers.ClientInfoCache.GetClientPublicKey(System.String)">
+            <summary>
+            获取此终端的公钥
+            </summary>
+            <param name="clientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiServer.Controllers.ClientInfoCache.UpdateClientInfo(WebApiServer.Controllers.ClientInfoCache.ClientInfo)">
+            <summary>
+            更新终端数据
+            </summary>
+            <param name="cltInfo"></param>
+        </member>
+        <member name="M:WebApiServer.Controllers.ClientInfoCache.UpdateClientInfo(System.String,System.String,System.String)">
+            <summary>
+            更新终端数据
+            </summary>
+            <param name="clientId"></param>
+            <param name="pubKey"></param>
+            <param name="desKey"></param>
+        </member>
+        <member name="M:WebApiServer.Controllers.ClientInfoCache.LoadClientInfo">
+            <summary>
+            将连接的终端数据读入缓存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApiServer.Controllers.ClientInfoCache.SaveClientInfo">
+            <summary>
+            保存终端访问数据（保存在文件中）
+            </summary>
+        </member>
+        <member name="T:WebApiServer.Filter.TransferFilter">
+            <summary>
+            处理响应数据格式的过滤器
+            </summary>
+        </member>
     </members>
 </doc>

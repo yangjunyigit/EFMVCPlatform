@@ -11,7 +11,7 @@ namespace EFMVCPlatform.DAL.Northwind
     {
         public void Test(Action<string> log)
         {
-            using (NorthwindContext ctx = new Northwind.NorthwindContext())
+            using (NorthwindEntities ctx = new Northwind.NorthwindEntities())
             {
                 var query = from a in ctx.GetSubEmployee(2)
                             select a;
