@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EFMVCPlatform.DAL
 {
-    public class DbContextBase<T>:T where T: DbContext
+    public class DbContextBase<T> where T: DbContext
     {
     }
 }

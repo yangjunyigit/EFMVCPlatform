@@ -47,7 +47,7 @@ namespace EFMVCPlatform.Business
 
         private void GetUserData()
         {
-            DataTable dt = DataProvider.UserDAL.GetCustomData();
+            //DataTable dt = DataProvider.UserDAL.GetCustomData();
         }
 
         public DataTable TestResultData()
